@@ -32,7 +32,7 @@ document.addEventListener('keyup', e =>{
 });
 
 function playNote(key){
-    const path = `../assets/sounds/${key.dataset.note}.wav`;
+    const path = `./assets/sounds/${key.dataset.note}.wav`;
     const noteSound = new Audio(path);
     noteSound.play();
 }
