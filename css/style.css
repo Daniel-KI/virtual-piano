@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Mulish', sans-serif;
-  /* user-select: none; */
+  user-select: none;
 }
 a{
   text-decoration: none;
@@ -37,6 +37,12 @@ body{
   padding: 20px 0;
   text-align: center;
 }
+.hidden-icon{
+  display: none !important;
+}
+
+
+
 .btn{
   width: 100px;
   height: 80px;
@@ -64,6 +70,11 @@ body{
 }
 .btn-selected{
   background-color: #ced9fa;
+}
+.btn-selected:hover{
+  background: linear-gradient(145deg, #b9c3e1, #dce8ff);
+  box-shadow: 10px 10px 20px #cbcfd5,
+              -10px -10px 20px #eff3f9;
 }
 
 .piano {
