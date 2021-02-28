@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  /* user-select: none; */
+}
+a{
+  text-decoration: none;
+}
+body{
+  min-height: 100vh;
+  color: #313940;
+  background: #dde1e7;
+}
+.header{
+  width: 100%;
+  text-align: center;
+  padding: 8vh 0 2vh 0;
+}
+
+.main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  max-width: 96%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.btn{
+  width: 100px;
+  height: 80px;
+  font-size: 16px;
+  font-weight: 200;
+  border: none;
+
+  background: #dde1e7;
+  box-shadow: 10px 10px 20px #cbcfd5,
+              -10px -10px 20px #eff3f9;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease;;
+  -moz-transition: all 0.1s ease;;
+  -o-transition: all 0.1s ease;;
+  transition: all 0.1s ease;
+}
+.btn:hover{
+  font-size: 15px;
+  background: linear-gradient(145deg, #c7cbd0, #ecf1f7);
+  box-shadow: 10px 10px 20px #cbcfd5,
+              -10px -10px 20px #eff3f9;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-selected{
+  background-color: #ced9fa;
+}
+
+.piano {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  width: 560px;
+  max-width: 96%;
+  margin: 0 auto;
+}
+.piano-key.white {
+  position: relative;
+  width: 80px;
+  height: 100%;
+  background-color: #dde1e7;
+  border: 1px solid #313940;
+
+  border-radius: 0px 0px 20px 20px;
+  transition: 0.3s;
+}
+.keys-sharp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.piano-key.black {
+  width: 10%;
+  height: 170px;
+  background-color: #313940;
+  border: 0;
+  border-radius: 0px 0px 10px 10px;
+  top: 0;
+  pointer-events: auto;
+  transition: 0.3s;
+}
+
+.hidden {
+  width: 10%;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.piano-key.white:hover{
+  background-color: #eff3f9;
+  cursor: pointer;
+}
+.piano-key.black:hover{
+  background-color: #434d57;
+  cursor: pointer;
+}
+.active-key{
+  transform: scaleX(0.90);
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #313940;
+  padding: 2vh 5vw 2vh 5vw;
+}
+
+.footer a{
+  color: #dde1e7;
+  font-size:larger;
+  transition: 0.3s;
+}
+.footer a:hover{
+  color: #ced9fa;
+  letter-spacing: 1px;
+}
+
+
+
+@media(max-width:700px){
+  .btn{
+    width: 70px;
+    height: 70px;
+  }
+  .piano{
+    height: 200px;
+  }
+  .piano-key.black{
+    height: 120px;
+  }
+}

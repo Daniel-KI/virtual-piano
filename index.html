@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual piano</title>
+
+    <link rel="shortcut icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/6fd0463d9c.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Virtual piano</h1>
+    </header>
+
+    <main class="main">
+        <div class="options">
+                <button title="Change sound type" class="btn">
+                    <i class="fas fa-volume-down"></i>
+                    <p>Sound type</p>
+                </button>
+                <button title="Display letter notes" class="btn">
+                    <i class="fas fa-font"></i>
+                    <p>Letter Notes</p>
+                </button>
+                <button title="Display keyboard marks" class="btn">
+                    <i class="fas fa-keyboard"></i>
+                    <p>Keyboard Marks</p>
+                </button>
+                <button title="Full screen" class="btn">
+                    <i class="fas fa-expand-arrows-alt"></i>
+                    <p>Full Screen</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="piano">
+            <div class="piano-key white" data-letter="A" data-note="C"></div>
+            <div class="piano-key white" data-letter="S" data-note="D"></div>
+            <div class="piano-key white" data-letter="D" data-note="E"></div>
+            <div class="piano-key white" data-letter="F" data-note="F"></div>
+            <div class="piano-key white" data-letter="G" data-note="G"></div>
+            <div class="piano-key white" data-letter="H" data-note="A"></div>
+            <div class="piano-key white" data-letter="J" data-note="B"></div>
+            <div class="keys-sharp">
+                <div class="piano-key black" data-letter="W" data-note="C-sharp"></div>
+                <div class="piano-key black" data-letter="E" data-note="D-sharp"></div>
+                <div class="hidden"></div>
+                <div class="piano-key black" data-letter="T" data-note="F-sharp"></div>
+                <div class="piano-key black" data-letter="Y" data-note="G-sharp"></div>
+                <div class="piano-key black" data-letter="U" data-note="A-sharp"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+            <a class="github" href="https://github.com/Daniel-KI" target="_blank">
+                <i class="fab fa-github"></i>
+                Daniel_KI
+            </a>
+            <a class="rss" href="https://rs.school/js/" target="_blank">
+                <img src="./assets/icons/rss.svg" alt="RS school">
+                <span class="rss-year">'21</span>
+            </a>
+    </footer>
+</body>
+
+</html>
