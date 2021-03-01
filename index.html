@@ -20,53 +20,54 @@
 
     <main class="main">
         <div class="options">
-                <button title="Change sound type" class="btn sound-type">
-                    <i class="fas fa-volume-down"></i>
-                    <p class="sound-type_name">Classical</p>
-                </button>
-                <button title="Display letter notes" class="btn">
-                    <i class="fas fa-font"></i>
-                    <p>Letter Notes</p>
-                </button>
-                <button title="Display keyboard marks" class="btn">
-                    <i class="fas fa-keyboard"></i>
-                    <p>Keyboard Marks</p>
-                </button>
-                <button title="Full screen" class="btn full-screen">
-                    <i class="fas fa-expand-arrows-alt expand-icon"></i>
-                    <i class="fas fa-compress-arrows-alt compress-icon hidden-icon "></i>
-                    <p>Full Screen</p>
-                </button>
-            </div>
+            <button title="Display keyboard marks" class="btn keyboard-hints btn-selected-hint">
+                <i class="fas fa-keyboard"></i>
+                <p>Keyboard Marks</p>
+            </button>
+            <button title="Display letter notes" class="btn note-hints">
+                <i class="fas fa-font"></i>
+                <p>Letter Notes</p>
+            </button>
+            <button title="Change sound type" class="btn sound-type">
+                <i class="fas fa-volume-down"></i>
+                <p class="sound-type_name">Classical</p>
+            </button>
+            <button title="Full screen" class="btn full-screen">
+                <i class="fas fa-expand-arrows-alt expand-icon"></i>
+                <i class="fas fa-compress-arrows-alt compress-icon hidden-icon "></i>
+                <p>Full Screen</p>
+            </button>
+        </div>
         </div>
 
         <div class="piano">
-            <div class="piano-key white" data-letter="A" data-note="C"></div>
-            <div class="piano-key white" data-letter="S" data-note="D"></div>
-            <div class="piano-key white" data-letter="D" data-note="E"></div>
-            <div class="piano-key white" data-letter="F" data-note="F"></div>
-            <div class="piano-key white" data-letter="G" data-note="G"></div>
-            <div class="piano-key white" data-letter="H" data-note="A"></div>
-            <div class="piano-key white" data-letter="J" data-note="B"></div>
+
+            <div class="piano-key white key-hint" data-key="A" data-note="C"></div>
+            <div class="piano-key white key-hint" data-key="S" data-note="D"></div>
+            <div class="piano-key white key-hint" data-key="D" data-note="E"></div>
+            <div class="piano-key white key-hint" data-key="F" data-note="F"></div>
+            <div class="piano-key white key-hint" data-key="G" data-note="G"></div>
+            <div class="piano-key white key-hint" data-key="H" data-note="A"></div>
+            <div class="piano-key white key-hint" data-key="J" data-note="B"></div>
             <div class="keys-sharp">
-                <div class="piano-key black" data-letter="W" data-note="C-sharp"></div>
-                <div class="piano-key black" data-letter="E" data-note="D-sharp"></div>
+                <div class="piano-key black key-hint" data-key="W" data-note="C♯"></div>
+                <div class="piano-key black key-hint" data-key="E" data-note="D♯"></div>
                 <div class="hidden"></div>
-                <div class="piano-key black" data-letter="T" data-note="F-sharp"></div>
-                <div class="piano-key black" data-letter="Y" data-note="G-sharp"></div>
-                <div class="piano-key black" data-letter="U" data-note="A-sharp"></div>
+                <div class="piano-key black key-hint" data-key="T" data-note="F♯"></div>
+                <div class="piano-key black key-hint" data-key="Y" data-note="G♯"></div>
+                <div class="piano-key black key-hint" data-key="U" data-note="A♯"></div>
             </div>
         </div>
     </main>
     <footer class="footer">
-            <a class="github" href="https://github.com/Daniel-KI" target="_blank">
-                <i class="fab fa-github"></i>
-                Daniel_KI
-            </a>
-            <a class="rss" href="https://rs.school/js/" target="_blank">
-                <img src="./assets/icons/rss.svg" alt="RS school">
-                <span class="rss-year">'21</span>
-            </a>
+        <a class="github" href="https://github.com/Daniel-KI" target="_blank">
+            <i class="fab fa-github"></i>
+            Daniel_KI
+        </a>
+        <a class="rss" href="https://rs.school/js/" target="_blank">
+            <img src="./assets/icons/rss.svg" alt="RS school">
+            <span class="rss-year">'21</span>
+        </a>
     </footer>
 </body>
 

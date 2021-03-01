@@ -17,7 +17,7 @@ body{
 .header{
   width: 100%;
   text-align: center;
-  padding: 8vh 0 2vh 0;
+  padding: 7vh 0 4vh 0;
 }
 
 .main {
@@ -34,7 +34,7 @@ body{
   width: 450px;
   max-width: 96%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 0 0 40px 0;
   text-align: center;
 }
 .hidden-icon{
@@ -69,13 +69,24 @@ body{
   outline: none;
 }
 .btn-selected{
-  background-color: #ced9fa;
+  background-color: #f54b54 !important;
+  color: white;
 }
 .btn-selected:hover{
-  background: linear-gradient(145deg, #b9c3e1, #dce8ff);
+  background: linear-gradient(145deg, #dd444c, #ff505a);
   box-shadow: 10px 10px 20px #cbcfd5,
               -10px -10px 20px #eff3f9;
 }
+.btn-selected-hint{
+  background-color: #05b8c5 !important;
+  color: white;
+}
+.btn-selected-hint:hover{
+  background: linear-gradient(145deg, #05a6b1, #05c5d3);
+  box-shadow: 10px 10px 20px #cbcfd5,
+              -10px -10px 20px #eff3f9;
+}
+
 
 .piano {
   position: relative;
@@ -134,7 +145,60 @@ body{
 }
 .active-key{
   transform: scaleX(0.90);
+  color: #f54b54;
 }
+
+
+
+
+
+.white.key-hint::after{
+  content: attr(data-key);
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  left:0;
+}
+.black.key-hint::after{
+  content: attr(data-key);
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -30px;
+  left:0;
+}
+.white.note-hint::after{
+  content: attr(data-note);
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: -30px;
+  left:0;
+}
+.black.note-hint::after{
+  content: attr(data-note);
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -30px;
+  left:0;
+}
+
+
+
+
+
 
 .footer{
   position: fixed;
@@ -154,7 +218,7 @@ body{
   transition: 0.3s;
 }
 .footer a:hover{
-  color: #ced9fa;
+  color: #f54b54;
   letter-spacing: 1px;
 }
 
@@ -172,3 +236,4 @@ body{
     height: 120px;
   }
 }
+
