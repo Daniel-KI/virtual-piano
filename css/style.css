@@ -19,7 +19,6 @@ body{
   text-align: center;
   padding: 7vh 0 4vh 0;
 }
-
 .main {
   width: 100%;
   max-width: 1400px;
@@ -27,7 +26,6 @@ body{
   display: flex;
   flex-direction: column;
 }
-
 .options{
   display: flex;
   justify-content: space-between;
@@ -40,7 +38,6 @@ body{
 .hidden-icon{
   display: none !important;
 }
-
 
 
 .btn{
@@ -67,6 +64,9 @@ body{
 }
 .btn:focus {
   outline: none;
+}
+.btn:active{
+  border: 2px solid #313940;
 }
 .btn-selected{
   background-color: #f54b54 !important;
@@ -137,19 +137,18 @@ body{
 
 .piano-key.white:hover{
   background-color: #eff3f9;
+  color: #05b8c5;
   cursor: pointer;
 }
 .piano-key.black:hover{
   background-color: #434d57;
+  color: #05b8c5;
   cursor: pointer;
 }
 .active-key{
   transform: scaleX(0.90);
-  color: #f54b54;
+  color: #f54b54 !important;
 }
-
-
-
 
 
 .white.key-hint::after{
@@ -196,10 +195,6 @@ body{
 }
 
 
-
-
-
-
 .footer{
   position: fixed;
   left: 0;
@@ -211,7 +206,6 @@ body{
   background-color: #313940;
   padding: 2vh 5vw 2vh 5vw;
 }
-
 .footer a{
   color: #dde1e7;
   font-size:larger;
@@ -221,7 +215,6 @@ body{
   color: #f54b54;
   letter-spacing: 1px;
 }
-
 
 
 @media(max-width:700px){
