@@ -56,6 +56,9 @@ body{
   -o-transition: all 0.1s ease;;
   transition: all 0.1s ease;
 }
+.btn-label{
+  display: block;
+}
 .btn:hover{
   font-size: 15px;
   background: linear-gradient(145deg, #c7cbd0, #ecf1f7);
