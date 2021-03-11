@@ -48,8 +48,8 @@ body{
   border: none;
 
   background: #dde1e7;
-  box-shadow: 10px 10px 20px #cbcfd5,
-              -10px -10px 20px #eff3f9;
+  box-shadow: 2px 2px 4px #cbcfd5,
+              -2px -2px 4px #eff3f9;
   cursor: pointer;
   -webkit-transition: all 0.1s ease;;
   -moz-transition: all 0.1s ease;;
@@ -62,8 +62,8 @@ body{
 .btn:hover{
   font-size: 15px;
   background: linear-gradient(145deg, #c7cbd0, #ecf1f7);
-  box-shadow: 10px 10px 20px #cbcfd5,
-              -10px -10px 20px #eff3f9;
+  box-shadow: 2px 2px 4px #cbcfd5,
+              -2px -2px 4px #eff3f9;
 }
 .btn:focus {
   outline: none;
@@ -77,8 +77,8 @@ body{
 }
 .btn-selected:hover{
   background: linear-gradient(145deg, #dd444c, #ff505a);
-  box-shadow: 10px 10px 20px #cbcfd5,
-              -10px -10px 20px #eff3f9;
+  box-shadow: 2px 2px 4px #cbcfd5,
+              -2px -2px 4px #eff3f9;
 }
 .btn-selected-hint{
   background-color: #05b8c5 !important;
@@ -86,8 +86,8 @@ body{
 }
 .btn-selected-hint:hover{
   background: linear-gradient(145deg, #05a6b1, #05c5d3);
-  box-shadow: 10px 10px 20px #cbcfd5,
-              -10px -10px 20px #eff3f9;
+  box-shadow: 2px 2px 4px #cbcfd5,
+              -2px -2px 4px #eff3f9;
 }
 
 
@@ -197,7 +197,6 @@ body{
   left:0;
 }
 
-
 .footer{
   position: fixed;
   left: 0;
@@ -219,8 +218,7 @@ body{
   letter-spacing: 1px;
 }
 
-
-@media(max-width:700px){
+@media(max-width:450px){
   .btn{
     width: 70px;
     height: 70px;
@@ -233,3 +231,9 @@ body{
   }
 }
 
+@media (orientation: landscape) and (max-height: 630px){
+  .footer{
+    position: static;
+    margin-top: 40px;
+  }  
+}
