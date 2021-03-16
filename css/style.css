@@ -131,13 +131,11 @@ body{
   pointer-events: auto;
   transition: 0.3s;
 }
-
 .hidden {
   width: 10%;
   background-color: transparent;
   pointer-events: none;
 }
-
 .piano-key.white:hover{
   background-color: #eff3f9;
   color: #05b8c5;

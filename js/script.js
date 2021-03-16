@@ -93,7 +93,6 @@ soundTypeBtn.addEventListener('click', () => {
     document.querySelector('.sound-type_name').textContent = selectedSoundType;
 });
 
-
 notesHintsBtn.addEventListener('click', () => {
     if (keyboardHintsBtn.classList.contains('btn-selected-hint')) {
         keyboardHintsBtn.classList.remove('btn-selected-hint');
