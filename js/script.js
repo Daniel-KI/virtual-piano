@@ -15,15 +15,16 @@ const soundBanks = new Map([
 let selectedSoundType = 'Classical';
 let mouseButtonDown = false;
 
-document.addEventListener('mousedown', () => {
-    mouseButtonDown = true;
-});
-document.addEventListener('mouseup', () => {
-    mouseButtonDown = false;
-});
+
+function playNote(key) {
+    const path = `${PATH_TO_SOUNDS}${soundBanks.get(selectedSoundType)}${key.dataset.note}.wav`;
+    const noteSound = new Audio(path);
+    noteSound.play();
+};
 
 pianoKeys.forEach(key => {
     key.addEventListener('mousedown', () => {
+        mouseButtonDown = true;
         key.classList.add('active-key');
         playNote(key);
     });
@@ -40,6 +41,10 @@ pianoKeys.forEach(key => {
         key.classList.remove('active-key');
     });
 });
+document.addEventListener('mouseup', () => {
+    mouseButtonDown = mouseButtonDown === true ? false : mouseButtonDown;
+});
+
 
 document.addEventListener('keydown', e => {
     if (e.repeat) return;
@@ -59,12 +64,6 @@ document.addEventListener('keyup', e => {
         pianoKeys[keyIndex].classList.remove('active-key');
     }
 });
-
-function playNote(key) {
-    const path = `${PATH_TO_SOUNDS}${soundBanks.get(selectedSoundType)}${key.dataset.note}.wav`;
-    const noteSound = new Audio(path);
-    noteSound.play();
-};
 
 fullScreenBtn.addEventListener('click', () => {
     if (!document.fullscreenElement) {
