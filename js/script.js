@@ -15,7 +15,6 @@ const soundBanks = new Map([
 let selectedSoundType = 'Classical';
 let mouseButtonDown = false;
 
-
 function playNote(key) {
     const path = `${PATH_TO_SOUNDS}${soundBanks.get(selectedSoundType)}${key.dataset.note}.wav`;
     const noteSound = new Audio(path);
@@ -41,10 +40,10 @@ pianoKeys.forEach(key => {
         key.classList.remove('active-key');
     });
 });
+
 document.addEventListener('mouseup', () => {
     mouseButtonDown = mouseButtonDown === true ? false : mouseButtonDown;
 });
-
 
 document.addEventListener('keydown', e => {
     if (e.repeat) return;
@@ -102,6 +101,7 @@ notesHintsBtn.addEventListener('click', () => {
         })
     }
 });
+
 keyboardHintsBtn.addEventListener('click', () => {
     if (notesHintsBtn.classList.contains('btn-selected-hint')) {
         notesHintsBtn.classList.remove('btn-selected-hint');
@@ -112,4 +112,3 @@ keyboardHintsBtn.addEventListener('click', () => {
         })
     }
 });
-

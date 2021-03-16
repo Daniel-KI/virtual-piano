@@ -38,8 +38,6 @@ body{
 .hidden-icon{
   display: none !important;
 }
-
-
 .btn{
   width: 100px;
   height: 80px;
@@ -89,8 +87,6 @@ body{
   box-shadow: 2px 2px 4px #cbcfd5,
               -2px -2px 4px #eff3f9;
 }
-
-
 .piano {
   position: relative;
   display: flex;
@@ -120,7 +116,6 @@ body{
   justify-content: space-between;
   pointer-events: none;
 }
-
 .piano-key.black {
   width: 10%;
   height: 170px;
@@ -150,8 +145,6 @@ body{
   transform: scaleX(0.90);
   color: #f54b54 !important;
 }
-
-
 .white.key-hint::after{
   content: attr(data-key);
   font-size: larger;
@@ -194,7 +187,6 @@ body{
   top: -30px;
   left:0;
 }
-
 .footer{
   position: fixed;
   left: 0;
@@ -215,7 +207,6 @@ body{
   color: #f54b54;
   letter-spacing: 1px;
 }
-
 @media(max-width:450px){
   .btn{
     width: 70px;
@@ -228,7 +219,6 @@ body{
     height: 120px;
   }
 }
-
 @media (orientation: landscape) and (max-height: 630px){
   .footer{
     position: static;
