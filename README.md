@@ -14,4 +14,6 @@
 - имеется возможность смены типа звучания пианино;
 
 ## Ссылки
-- 📌 Демоверсия : https://daniel-ki-virtual-piano.netlify.app/
+- 📌 Demo : https://daniel-ki-virtual-piano.netlify.app/
+- 📌 Video review: https://www.youtube.com/watch?v=8muLcpnzAH4
+
