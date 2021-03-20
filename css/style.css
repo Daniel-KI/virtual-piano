@@ -146,6 +146,7 @@ body{
   color: #f54b54 !important;
 }
 .white.key-hint::after{
+  pointer-events: none;
   content: attr(data-key);
   font-size: larger;
   font-weight: bold;
@@ -157,6 +158,7 @@ body{
   left:0;
 }
 .black.key-hint::after{
+  pointer-events: none;
   content: attr(data-key);
   font-size: larger;
   font-weight: bold;
@@ -167,6 +169,7 @@ body{
   left:0;
 }
 .white.note-hint::after{
+  pointer-events: none;
   content: attr(data-note);
   font-size: larger;
   font-weight: bold;
@@ -178,6 +181,7 @@ body{
   left:0;
 }
 .black.note-hint::after{
+  pointer-events: none;
   content: attr(data-note);
   font-size: larger;
   font-weight: bold;
